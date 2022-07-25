@@ -55,5 +55,12 @@ export default {
                 }
             ]
         },
+        {
+            title: "Images",
+            name: "images",
+            type: "array",
+            of: [{type: "productImage"}],
+            validation: Rule => Rule.required()
+        },
     ]
 }

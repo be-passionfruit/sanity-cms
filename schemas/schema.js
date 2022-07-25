@@ -13,6 +13,8 @@ import Category from './Category'
 import Concern from './Concern'
 import Bundles from './Bundles'
 import Blog from './Blog'
+import Influencer from './Influencer'
+import Discount from './Discount'
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -31,6 +33,8 @@ export default createSchema({
     Question, //Hide Review in List 
     Social, //Hide Review in List 
     Blog,
+    Influencer,
+    Discount,
 
     /* Custom types here */
     ProductImage,

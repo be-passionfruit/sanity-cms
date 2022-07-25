@@ -78,6 +78,7 @@ export default {
             name: "images",
             type: "array",
             of: [{type: "productImage"}],
+            validation: Rule => Rule.required()
         },
         {
             title: "Reviews",

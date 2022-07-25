@@ -4,6 +4,8 @@ import {routine} from './desk/routine';
 import {category} from './desk/category';
 import {bundles} from './desk/bundles';
 import {blog} from './desk/blog';
+import {influencer} from "./desk/influencer";
+import {discount} from "./desk/discount";
 
 const DOCUMENT_TYPES_IN_STRUCTURE = [
   'bundles',
@@ -11,6 +13,8 @@ const DOCUMENT_TYPES_IN_STRUCTURE = [
   'routine',
   'category',
   'blog',
+  'influencer',
+  'discount',
 ]
 
 export default () => {
@@ -25,6 +29,10 @@ export default () => {
         routine,
         S.divider(),
         blog,
+        S.divider(),
+        discount,
+        influencer,
+
         // ...S.documentTypeListItems().filter(listItem => !DOCUMENT_TYPES_IN_STRUCTURE.includes(listItem.getId()))
       ])
   )
