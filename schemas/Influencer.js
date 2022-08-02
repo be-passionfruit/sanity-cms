@@ -4,38 +4,35 @@ export default {
     type: "document",
     fields: [
         {
-            title: "Firstname",
-            name: "firstName",
+            title: "Full Name",
+            name: "name",
             type: "string",
-        },
-        {
-            title: "Lastname",
-            name: "lastName",
-            type: "string",
+            description: "Volledige naam van de influencer."
         },
         {
             title: "Amount",
             name: "amount",
             type: "number",
-            description: "Discount in percentage %"
+            description: "Korting in percentage %"
         },
         {
             title: "Promocode",
             name: "promoCode",
             type: "string",
-            description: "Promocode for influencers' audience."
+            description: "Promocode uniek de influencer."
         },
         {
             title: "Sales",
             name: "sales",
             type: "number",
             readOnly: true,
-            description: "Amount of sales by this influencer to this date."
+            description: "Totale hoeveelheid sales van deze influencer."
         },
         {
             title: "Country",
             name: "country",
             type: "string",
+            description: "Land van de influencer."
         }
     ]
 }
